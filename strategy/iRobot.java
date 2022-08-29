@@ -1,3 +1,5 @@
+package strategy;
+
 public class iRobot extends Robot {
 
     public iRobot(String name) {
@@ -6,6 +8,6 @@ public class iRobot extends Robot {
     }
 
     public String toString() {
-        return name +"this is an iRobot";
+        return name +" is an iRobot";
     }
 }

@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 public abstract class MoveBehavior {
     private static final int DEFAULT_SPEED = 200;
-    private static final int NUM_MOVES = 30;
+    protected static final int NUM_MOVES = 30;
 
     /**
      * Moves the character across the screen
@@ -23,7 +23,10 @@ public abstract class MoveBehavior {
      *                  is fast
      */
     public void move(ArrayList<String> character, int speed) {
-        // TBD
+        displayCharacter(character);
+        for(int i = 0;i<NUM_MOVES*speed;i+= speed) {
+            pushCharacterForward(character);
+        }
     }
 
     /**
@@ -35,7 +38,7 @@ public abstract class MoveBehavior {
      * @param character An arrayList were index 0 is the first line of character,
      *                  1 is the second line of the character...
      */
-    private void displayCharacter(ArrayList<String> character) {
+    protected void displayCharacter(ArrayList<String> character) {
         for (int j = 0; j < character.size(); j++) {
             System.out.println(character.get(j));
         }
@@ -46,7 +49,7 @@ public abstract class MoveBehavior {
      * 
      * @param character The list to move forward
      */
-    private void pushCharacterForward(ArrayList<String> character) {
+    protected void pushCharacterForward(ArrayList<String> character) {
         for (int j = 0; j < character.size(); j++) {
             character.set(j, " " + character.get(j));
         }
