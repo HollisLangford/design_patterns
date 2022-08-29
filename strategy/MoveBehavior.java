@@ -23,10 +23,14 @@ public abstract class MoveBehavior {
      *                  is fast
      */
     public void move(ArrayList<String> character, int speed) {
-        displayCharacter(character);
-        for(int i = 0;i<NUM_MOVES*speed;i+= speed) {
+        for(int i = 0;i<NUM_MOVES*speed;i++) {
+            clear();
+            displayCharacter(character);
+
             pushCharacterForward(character);
+            sleep(DEFAULT_SPEED);
         }
+        clear();
     }
 
     /**

@@ -6,9 +6,8 @@ public class WalkBehavior extends MoveBehavior {
 
     @Override
     public void move(ArrayList<String> character) {
-        int speed = 2;
+        super.move(character, 2);
         
     }
     
-    int speed = 2;
 }

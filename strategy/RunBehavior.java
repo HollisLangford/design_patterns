@@ -12,6 +12,6 @@ public class RunBehavior extends MoveBehavior {
     
     @Override
     public void move(ArrayList<String> character, int speed) {
-        speed = 3;
+        super.move(character, 3);
     }
 }

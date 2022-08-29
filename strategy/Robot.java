@@ -1,5 +1,7 @@
 package strategy;
 
+import java.util.ArrayList;
+
 public abstract class Robot {
     String name;
     MoveBehavior movebehavior;
@@ -19,6 +21,8 @@ public abstract class Robot {
     public MoveBehavior move() {
         return movebehavior;
     }
+
+    
 
     public abstract String toString();
 }
