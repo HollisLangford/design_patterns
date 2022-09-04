@@ -4,16 +4,13 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Baby implements Subject {
-    String name = "";
+    String name = "Charlie";
     ArrayList<Observer> observers;
     Random rand = new Random();
 
-    public Baby() {
-        observers = new ArrayList<Observer>();
-    }
-
     public Baby(String name) {
         name = this.name;
+        observers = new ArrayList<Observer>();
     }
     public String getName() {
         return this.name;

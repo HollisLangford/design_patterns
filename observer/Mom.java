@@ -10,15 +10,15 @@ public class Mom implements Observer {
 
     public void update(Cry cry){
         if(Cry.ANGRY != null){
-            System.out.println("Mom hugs "+this.Baby);
+            System.out.println("Mom hugs "+((observer.Baby) Baby).getName());
             ((Baby)Baby).receiveLove();
         }
         else if( Cry.HUNGRY != null){
-            System.out.println("Mom feeds "+this.Baby);
+            System.out.println("Mom feeds "+((observer.Baby) Baby).getName());
            ((Baby)Baby).eat();
         }
         else if(Cry.WET != null){
-            System.out.println("Mom changes "+this.Baby);
+            System.out.println("Mom changes "+((observer.Baby) Baby).getName());
             ((Baby)Baby).getChanged();
         }
     }
