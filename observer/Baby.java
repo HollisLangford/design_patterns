@@ -15,6 +15,11 @@ public class Baby implements Subject {
     public String getName() {
         return this.name;
     }
+
+    /**
+     * the receive love method has 2 different outputs therefore the random is set to those 2 outputs
+     */
+
     public void receiveLove() {
         int random = rand.nextInt(1);
         if(random == 0){

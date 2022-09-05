@@ -8,6 +8,10 @@ public class Mom implements Observer {
         Baby.registerObserver(this);
     }
 
+    /**
+     * grabs the name of the baby from the baby class and displays the proper output based on the cry
+     */
+
     public void update(Cry cry){
         if(Cry.ANGRY != null){
             System.out.println("Mom hugs "+((observer.Baby) Baby).getName());
