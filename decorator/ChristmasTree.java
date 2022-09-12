@@ -3,6 +3,6 @@ package decorator;
 public class ChristmasTree extends Tree {
     
     public ChristmasTree() {
-        super(FileReader.getLines("txt/tree.txt"));
+        super(FileReader.getLines("/txt/tree.txt"));
     }
 }

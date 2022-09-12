@@ -10,7 +10,12 @@ public class Tree {
     }
 
     public String toString(ArrayList<String> lines){
-        return toString(lines);
+        String show = "";
+        for (int i=0;i<lines.size();i++) {
+            show += lines.get(i);
+            show += "\n";
+        }
+        return show;
     }
     
 }
