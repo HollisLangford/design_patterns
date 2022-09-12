@@ -6,3 +6,6 @@ public class ChristmasTree extends Tree {
         super(FileReader.getLines("txt/tree.txt"));
     }
 }
+/*
+ * takes the methods from Tree and combines them with the file reader to shaow a display
+ */

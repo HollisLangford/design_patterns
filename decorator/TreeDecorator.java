@@ -12,9 +12,13 @@ public class TreeDecorator extends Tree {
             for (int j=0;j<decor.get(i).length();j++) {
                 if(lines.get(i).substring(j, j+1).equals(" ") &&
                 !(decor.get(i).substring(j, j+1).equals(" "))) {
-                    lines.set(i, lines.get(i).substring(0,j) + decor.get(i).substring(j,j+1) +
+                    lines.set(i, lines.get(i).substring(0,j) + 
+                    decor.get(i).substring(j,j+1) +
                     lines.get(i).substring(j+1,lines.get(i).length()));
                 }
+                /*
+                 * makes a new array for the decorations and adds them into the array with the tree
+                 */
             }
         }
     }
