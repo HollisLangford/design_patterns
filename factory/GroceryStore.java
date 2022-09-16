@@ -8,17 +8,18 @@ public class GroceryStore {
         Cereal cereal;
 
         if(cerealType.equals("frosted flakes")) {
-            cereal = new FrostedFlakes();
+            cereal = new FrostedFlakes(cerealType, 0);
         }
         else if(cerealType.equals("fruit loops")) {
-            cereal = new FruitLoops();
+            cereal = new FruitLoops(cerealType, 0);
         }
         else if(cerealType.equals("lucky charms")) {
-            cereal = new LuckyCharms();
+            cereal = new LuckyCharms(cerealType, 0);
         }
 
         cereal.prepare();
         cereal.boxCereal();
         cereal.priceCereal();
+        return cereal;
     }
 }
