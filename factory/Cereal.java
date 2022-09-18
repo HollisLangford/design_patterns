@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public abstract class Cereal {
 
-    protected String name;
-    protected double price;
+    protected static String name;
+    protected static double price;
     protected ArrayList<String> toys = new ArrayList<String>();
 
     public Cereal(String name, double price) {
-        this.name = name;
-        this.price = price;
+        Cereal.name = name;
+        Cereal.price = price;
     }
 
     public String prepare() {
@@ -18,7 +18,7 @@ public abstract class Cereal {
     }
 
     public String boxCereal() {
-        return "Boxing the " + name;
+        return "Boxing the " + name +" \n- Drawing fun pictures of " + name +" on the box \n- Pouring the " + name +" into the box \n- Adding the suprise My Little Pony Stickers\n";
     }
 
     public String priceCereal() {

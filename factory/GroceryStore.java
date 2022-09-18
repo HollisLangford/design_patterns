@@ -5,16 +5,16 @@ public class GroceryStore {
     public  GroceryStore() {}
 
     public Cereal createCereal(String cerealType) {
-        Cereal cereal;
+        Cereal cereal = null;
 
         if(cerealType.equals("frosted flakes")) {
-            cereal = new FrostedFlakes(cerealType, 0);
+            cereal = new FrostedFlakes();
         }
         else if(cerealType.equals("fruit loops")) {
-            cereal = new FruitLoops(cerealType, 0);
+            cereal = new FruitLoops();
         }
         else if(cerealType.equals("lucky charms")) {
-            cereal = new LuckyCharms(cerealType, 0);
+            cereal = new LuckyCharms();
         }
 
         cereal.prepare();
