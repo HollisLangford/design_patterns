@@ -12,12 +12,15 @@ public class Assignment {
     }
 
     public boolean hasTopic(Topic topic) {
+        if( this.topic == topic) {
+            return true;
+        }
         return false;
 
     }
 
     public String toString() {
-        return description;
+        return title +" " + description;
         
     }
 }

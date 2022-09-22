@@ -27,7 +27,7 @@ public class Course {
     }
 
     public String toString() {
-
+        return name +" " + title;
     }
 
     private Assignment[] growArray(Assignment[] assignments) {
