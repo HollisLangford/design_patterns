@@ -18,6 +18,9 @@ public class Assignment {
         return false;
 
     }
+    /*
+     * takes the topic enum and makes it readable by the diver
+     */
 
     public String toString() {
         return title +" " + description;

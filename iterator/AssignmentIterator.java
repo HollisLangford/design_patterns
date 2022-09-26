@@ -13,6 +13,9 @@ public class AssignmentIterator {
     public boolean hasNext() {
         return assignments.length > positions && assignments[positions] != null;
     }
+    /*
+     * returns the number of assignments while it is larger the the postions number and if it does not equal null
+     */
 
     public Assignment next() {
         if(hasNext()) {

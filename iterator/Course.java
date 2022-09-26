@@ -30,6 +30,7 @@ public class Course {
         return name +" " + title;
     }
 
+
     private Assignment[] growArray(Assignment[] assignments) {
         Assignment[] temp = new Assignment[assignments.length*2];
 
@@ -39,4 +40,7 @@ public class Course {
 
         return temp;
     }
+    /*
+     * Takes the set array size and doubles it by the amout of assignments
+     */
 }
