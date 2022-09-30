@@ -15,10 +15,15 @@ public class OutfitCreator {
     }
 
     public static OutfitCreator getInstance() {
-
+        if(outfitcreator == null) {
+            System.out.println("Creating Outfit");
+            outfitcreator = new OutfitCreator();
+        }
+        return outfitcreator;
     }
 
     public String getOutfit(Season season) {
+        
         
     }
     
