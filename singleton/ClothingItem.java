@@ -15,15 +15,28 @@ public class ClothingItem {
     }
 
     public boolean hasSeason(Season season) {
-
+        for (Season tempSeason: seasons) {
+            if (tempSeason == season) {
+                return true;
+            }
+        }
+        return false;
     }
+    /*
+     * verifies that the outfit has a season
+     */
 
     public void addSeason(Season season) {
-
+        if (!(this.hasSeason(season))) {
+            seasons.add(season);
+        }
     }
+    /*
+     * adds the season to the outfit if it is not already there
+     */
 
     public String toString() {
-        return name + " " + part;
+        return name + " "+ color + " " + part;
     }
     
 }
